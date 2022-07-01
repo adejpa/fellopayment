@@ -12,6 +12,7 @@ $(document).ready(function() {
   $(".data-list").on("click", ".data-content", function() {
     const no = "08"+Math.floor(Math.random() * 10);
     const noHp = no.slice(0, 5) + "xxxxx";
+    const dataId = $(this).attr("data-id");
 
     if ($(this).hasClass("not-connected")) {
       showSkeleton({
@@ -31,7 +32,13 @@ $(document).ready(function() {
         });
       }, 3000);
     } else {
-      window.location.href = "detail-wallet.html";
+      if (dataId == 1) {
+        window.location.href = "detail-fello.html";
+      } else if (dataId == 2) {
+        window.location.href = "detail-dana.html";
+      } else {
+        window.location.href = "detail-doku.html";
+      }
     }
   });
 });
