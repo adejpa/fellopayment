@@ -113,8 +113,6 @@ const showConnected = ({
     $(parent).find(".balance-item").removeClass("d-none");
     $(parent).find(".desc-item").addClass("text-dark");
     $(parent).find(".desc-item").text(value);
-    $(".data-content").removeClass("mb-2");
-    $(parent).addClass("mb-2");
   } else {
     $(parent).addClass("not-connected");
     $(parent).find(".balance-item").addClass("d-none");
