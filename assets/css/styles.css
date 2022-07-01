@@ -320,6 +320,9 @@ body {
   background: #242424;
   opacity: 0.5;
 }
+.bt-sheet[aria-hidden="true"] .bt-sheet-overlay {
+  visibility: hidden;
+}
 .bt-sheet-contents {
   background: #fff;
   border-radius: 16px 16px 0 0;
@@ -343,6 +346,7 @@ body {
 }
 .bt-sheet[aria-hidden="true"] .bt-sheet-contents {
   transform: translateY(100%);
+  visibility: hidden;
 }
 .bt-sheet .bt-sheet-draggable-area {
   display: flex;
